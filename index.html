@@ -1,470 +1,228 @@
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <!-- Camera position -->
-      <a-entity position="0 0 2" rotation="0 0 0">
-        <a-camera></a-camera>
-      </a-entity>
 
-      <!--   Room walls, floor, ceiling  -->
+<head>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- Camera position -->
+    <a-entity position="0 0 2" rotation="0 0 0">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <!--   Room walls, floor, ceiling  -->
+    <a-plane
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/2d8724dbf01d055838a012165441b09f.jpg?v=1685813364999"
+      position="0 0 -4" rotation="-90 0 0" width="10" height="20" color="#59412d"></a-plane>
+    <a-plane
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
+      position="-5 2.25 -4" rotation="0 90 0" height="5" width="20"></a-plane>
+    <a-plane
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
+      position="5 2.25 -4" rotation="0 -90 0" height="5" width="20"></a-plane>
+    <a-plane
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
+      position="0 2.25 6" rotation="0 180 0" height="5" width="10"></a-plane>
+    <a-plane
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
+      position="0 2.25 -14" rotation="0 0 0" height="5" width="10"></a-plane>
+    <a-plane
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-la-miko-3616764.jpg?v=1685814679876"
+      position="0 4.5 -4" rotation="90 0 0" width="10" height="20"></a-plane>
+
+    <!-- Picture frames (starting from left side then right side) -->
+    <!-- Frame 0 -->
+    <a-entity id="picture-frame0" position="-4.9 2.5 2" rotation="0 90 0">
+      <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF8323%20(2).JPG?v=1685835754283"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
+
+    <!-- Frame 1 -->
+    <a-entity id="picture-frame1" position="-4.9 2.5 -2" rotation="0 90 0">
       <a-plane
-        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/2d8724dbf01d055838a012165441b09f.jpg?v=1685813364999"
-        position="0 0 -4"
-        rotation="-90 0 0"
-        width="10"
-        height="20"
-        color="#59412d"
-      ></a-plane>
+        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/969c90fc-10bd-4a37-b2c7-eb5e1af88eaa_rw_1200.jpg?v=1685835566199"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
+
+    <!-- Frame 2 -->
+    <a-entity id="picture-frame2" position="-4.9 2.5 -6" rotation="0 90 0">
+      <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
+
+    <!-- Frame 3 -->
+    <a-entity id="picture-frame3" position="-4.9 2.5 -10" rotation="0 90 0">
+      <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1476.JPG?v=1685836518221"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
+
+    <!-- Frame 4 -->
+    <a-entity id="picture-frame4" position="4.9 2.5 -10" rotation="0 -90 0">
       <a-plane
-        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-        position="-5 2.25 -4"
-        rotation="0 90 0"
-        height="5"
-        width="20"
-      ></a-plane>
+        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1462-3127x3999.JPG?v=1685836516846"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
+
+    <!-- Frame 5 -->
+    <a-entity id="picture-frame5" position="4.9 2.5 -6" rotation="0 -90 0">
       <a-plane
-        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-        position="5 2.25 -4"
-        rotation="0 -90 0"
-        height="5"
-        width="20"
-      ></a-plane>
-      <a-plane
-        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-        position="0 2.25 6"
-        rotation="0 180 0"
-        height="5"
-        width="10"
-      ></a-plane>
-      <a-plane
-        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-        position="0 2.25 -14"
-        rotation="0 0 0"
-        height="5"
-        width="10"
-      ></a-plane>
-      <a-plane
-        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-la-miko-3616764.jpg?v=1685814679876"
-        position="0 4.5 -4"
-        rotation="90 0 0"
-        width="10"
-        height="20"
-      ></a-plane>
+        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/43d4ee32-f5a5-4db7-a046-d4bfe86e5573_rw_1200.jpg?v=1685835682207"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
 
-      <!-- Picture frames (starting from left side then right side) -->
-      <!-- Frame 0 -->
-      <a-entity id="picture-frame0" position="-4.9 2.5 2" rotation="0 90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF8323%20(2).JPG?v=1685835754283"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+    <!-- Frame 6 -->
+    <a-entity id="picture-frame6" position="4.9 2.5 -2" rotation="0 -90 0">
+      <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1457.JPG?v=1685836516310"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
 
-      <!-- Frame 1 -->
-      <a-entity id="picture-frame1" position="-4.9 2.5 -2" rotation="0 90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/969c90fc-10bd-4a37-b2c7-eb5e1af88eaa_rw_1200.jpg?v=1685835566199"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+    <!-- Frame 7 -->
+    <a-entity id="picture-frame7" position="4.9 2.5 2" rotation="0 -90 0">
+      <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/IMG_4623.jpg?v=1685837243926"
+        height="2.5" width="2" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+      <a-plane color="black" height="2.6" width="2.1" position="0 0 -0.01"></a-plane>
+    </a-entity>
 
-      <!-- Frame 2 -->
-      <a-entity id="picture-frame2" position="-4.9 2.5 -6" rotation="0 90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+    <!-- People -->
+    <!-- Person1 -->
+    <a-entity position="-3 1 -11" scale="2 2 2" rotation="0 -35 0">
+      <!-- Head -->
+      <a-entity position="0 0.45 0" geometry="primitive: sphere; radius: 0.2;" material="color: #ffcc99;"></a-entity>
 
-      <!-- Frame 3 -->
-      <a-entity id="picture-frame3" position="-4.9 2.5 -10" rotation="0 90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1476.JPG?v=1685836518221"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+      <!-- Body -->
+      <a-entity geometry="primitive: box; width: 0.3; height: 0.5; depth: 0.15;" material="color: #333;"></a-entity>
 
-      <!-- Frame 4 -->
-      <a-entity id="picture-frame4" position="4.9 2.5 -10" rotation="0 -90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1462-3127x3999.JPG?v=1685836516846"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+      <!-- Arms -->
+      <a-entity position="-0.225 0.2 0" geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
+        material="color: #333;"></a-entity>
+      <a-entity position="0.225 0.2 0" geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
+        material="color: #333;"></a-entity>
+      <!-- Legs -->
+      <a-entity position="-0.1 -0.3 0" geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
+        material="color: #333;"></a-entity>
+      <a-entity position="0.1 -0.3 0" geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
+        material="color: #333;"></a-entity>
+    </a-entity>
 
-      <!-- Frame 5 -->
-      <a-entity id="picture-frame5" position="4.9 2.5 -6" rotation="0 -90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/43d4ee32-f5a5-4db7-a046-d4bfe86e5573_rw_1200.jpg?v=1685835682207"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+    <!-- Person2 -->
+    <a-entity position="-3 1 -9" scale="2 2 2" rotation="0 -110 0">
+      <!-- Head -->
+      <a-entity position="0 0.45 0" geometry="primitive: sphere; radius: 0.2;" material="color: #ffcc99;"></a-entity>
 
-      <!-- Frame 6 -->
-      <a-entity id="picture-frame6" position="4.9 2.5 -2" rotation="0 -90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1457.JPG?v=1685836516310"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+      <!-- Body -->
+      <a-entity geometry="primitive: box; width: 0.3; height: 0.5; depth: 0.15;" material="color: #79b2b5;"></a-entity>
 
-      <!-- Frame 7 -->
-      <a-entity id="picture-frame7" position="4.9 2.5 2" rotation="0 -90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/IMG_4623.jpg?v=1685837243926"
-          height="2.5"
-          width="2"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.6"
-          width="2.1"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
+      <!-- Arms -->
+      <a-entity position="-0.225 0.2 0" geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
+        material="color: #79b2b5;"></a-entity>
+      <a-entity position="0.225 0.2 0" geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
+        material="color: #79b2b5;"></a-entity>
+      <!-- Legs -->
+      <a-entity position="-0.1 -0.3 0" geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
+        material="color: #79b2b5;"></a-entity>
+      <a-entity position="0.1 -0.3 0" geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
+        material="color: #79b2b5;"></a-entity>
+    </a-entity>
 
-      <!-- People -->
-      <!-- Person1 -->
-      <a-entity position="-3 1 -11" scale="2 2 2" rotation="0 -35 0">
-        <!-- Head -->
-        <a-entity
-          position="0 0.45 0"
-          geometry="primitive: sphere; radius: 0.2;"
-          material="color: #ffcc99;"
-        ></a-entity>
+    <!-- light -->
+    <a-light type="ambient" color="#888" intensity="0.6"></a-light>
 
-        <!-- Body -->
-        <a-entity
-          geometry="primitive: box; width: 0.3; height: 0.5; depth: 0.15;"
-          material="color: #333;"
-        ></a-entity>
+    <a-entity position="0 3 -4" rotation="0 0 0">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="5" angle="45" penumbra="0"
+        target="#lightTarget0"></a-light>
+      <a-entity id="lightTarget0" position="0 -3 0"></a-entity>
+    </a-entity>
 
-        <!-- Arms -->
-        <a-entity
-          position="-0.225 0.2 0"
-          geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
-          material="color: #333;"
-        ></a-entity>
-        <a-entity
-          position="0.225 0.2 0"
-          geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
-          material="color: #333;"
-        ></a-entity>
-        <!-- Legs -->
-        <a-entity
-          position="-0.1 -0.3 0"
-          geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
-          material="color: #333;"
-        ></a-entity>
-        <a-entity
-          position="0.1 -0.3 0"
-          geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
-          material="color: #333;"
-        ></a-entity>
-      </a-entity>
+    <a-entity position="0 4 -4" rotation="90 0 00">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="8" angle="45" penumbra="0"
+        target="#lightTarget"></a-light>
+      <a-entity id="lightTarget" position="-1 0 0"></a-entity>
+    </a-entity>
 
-      <!-- Person2 -->
-      <a-entity position="-3 1 -9" scale="2 2 2" rotation="0 -110 0">
-        <!-- Head -->
-        <a-entity
-          position="0 0.45 0"
-          geometry="primitive: sphere; radius: 0.2;"
-          material="color: #ffcc99;"
-        ></a-entity>
+    <a-entity position="0 4 2" rotation="90 0 0">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="8" angle="45" penumbra="0"
+        target="#lightTarget2"></a-light>
+      <a-entity id="lightTarget2" position="-1 0 0"></a-entity>
+    </a-entity>
 
-        <!-- Body -->
-        <a-entity
-          geometry="primitive: box; width: 0.3; height: 0.5; depth: 0.15;"
-          material="color: #79b2b5;"
-        ></a-entity>
+    <a-entity position="0 4 -10" rotation="90 0 0">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="8" angle="45" penumbra="0"
+        target="#lightTarget3"></a-light>
+      <a-entity id="lightTarget3" position="-1 0 0"></a-entity>
+    </a-entity>
 
-        <!-- Arms -->
-        <a-entity
-          position="-0.225 0.2 0"
-          geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
-          material="color: #79b2b5;"
-        ></a-entity>
-        <a-entity
-          position="0.225 0.2 0"
-          geometry="primitive: box; width: 0.05; height: 0.3; depth: 0.15;"
-          material="color: #79b2b5;"
-        ></a-entity>
-        <!-- Legs -->
-        <a-entity
-          position="-0.1 -0.3 0"
-          geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
-          material="color: #79b2b5;"
-        ></a-entity>
-        <a-entity
-          position="0.1 -0.3 0"
-          geometry="primitive: box; width: 0.1; height: 0.3; depth: 0.15;"
-          material="color: #79b2b5;"
-        ></a-entity>
-      </a-entity>
+    <a-entity position="0 4 -4" rotation="90 0 00">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="8" angle="45" penumbra="0"
+        target="#lightTarget4"></a-light>
+      <a-entity id="lightTarget4" position="1 0 0"></a-entity>
+    </a-entity>
 
-      <!-- light -->
-      <a-light type="ambient" color="#888" intensity="0.6"></a-light>
-      
-      <a-entity position="0 3 -4" rotation="0 0 0">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="5"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget0"
-        ></a-light>
-        <a-entity id="lightTarget0" position="0 -3 0"></a-entity>
-      </a-entity>
+    <a-entity position="0 4 2" rotation="90 0 0">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="8" angle="45" penumbra="0"
+        target="#lightTarget5"></a-light>
+      <a-entity id="lightTarget5" position="1 0 0"></a-entity>
+    </a-entity>
 
-      <a-entity position="0 4 -4" rotation="90 0 00">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="8"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget"
-        ></a-light>
-        <a-entity id="lightTarget" position="-1 0 0"></a-entity>
-      </a-entity>
-      
-      <a-entity position="0 4 2" rotation="90 0 0">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="8"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget2"
-        ></a-light>
-        <a-entity id="lightTarget2" position="-1 0 0"></a-entity>
-      </a-entity>
-      
-      <a-entity position="0 4 -10" rotation="90 0 0">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="8"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget3"
-        ></a-light>
-        <a-entity id="lightTarget3" position="-1 0 0"></a-entity>
-      </a-entity>
+    <a-entity position="0 4 -10" rotation="90 0 0">
+      <a-light type="spot" color="#f7d383" intensity="2" distance="8" angle="45" penumbra="0"
+        target="#lightTarget6"></a-light>
+      <a-entity id="lightTarget6" position="1 0 0"></a-entity>
+    </a-entity>
 
-      <a-entity position="0 4 -4" rotation="90 0 00">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="8"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget4"
-        ></a-light>
-        <a-entity id="lightTarget4" position="1 0 0"></a-entity>
-      </a-entity>
-      
-      <a-entity position="0 4 2" rotation="90 0 0">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="8"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget5"
-        ></a-light>
-        <a-entity id="lightTarget5" position="1 0 0"></a-entity>
-      </a-entity>
-      
-      <a-entity position="0 4 -10" rotation="90 0 0">
-        <a-light
-          type="spot"
-          color="#f7d383"
-          intensity="2"
-          distance="8"
-          angle="45"
-          penumbra="0"
-          target="#lightTarget6"
-        ></a-light>
-        <a-entity id="lightTarget6" position="1 0 0"></a-entity>
-      </a-entity>
-
-      <!-- Center display -->
+    <!-- Center display -->
+    <a-box position="0 0 -3.5" rotation="0 0 0" width="1" height="0.2" depth="1"
+      src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"></a-box>
+    <a-entity position="0 0.3 -3.5">
       <a-box
-        position="0 0 -3.5"
-        rotation="0 0 0"
-        width="1"
-        height="0.2"
-        depth="1"
         src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-      ></a-box>
-      <a-entity position="0 0.3 -3.5">
-        <a-box
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-          width="0.2"
-          height="0.4"
-          depth="0.2"
-        >
-          <a-animation
-            attribute="rotation"
-            dur="15000"
-            fill="forwards"
-            to="0 360 0"
-            repeat="indefinite"
-          ></a-animation>
-        </a-box>
-      </a-entity>
-      <a-entity position="0 1.75 -3.5">
-        <a-box
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
-          width="2"
-          height="2.5"
-          depth="2"
-        ><a-entity id="picture-frame9" position="0 0 1.04" rotation="0 0 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
-          height="2"
-          width="1.5"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.1"
-          width="1.6"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
-           <a-entity id="picture-frame10" position="1.04 0 0" rotation="0 90 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
-          height="2"
-          width="1.5"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.1"
-          width="1.6"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
-          <a-entity id="picture-frame11" position="0 0 -1.04" rotation="0 180 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
-          height="2"
-          width="1.5"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.1"
-          width="1.6"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
-          <a-entity id="picture-frame12" position="-1.04 0 0" rotation="0 270 0">
-        <a-plane
-          src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
-          height="2"
-          width="1.5"
-          material="side: double; transparent: true; opacity: 0.8"
-        ></a-plane>
-        <a-plane
-          color="black"
-          height="2.1"
-          width="1.6"
-          position="0 0 -0.01"
-        ></a-plane>
-      </a-entity>
-          <a-animation
-            attribute="rotation"
-            dur="15000"
-            fill="forwards"
-            to="0 360 0"
-            repeat="indefinite"
-          ></a-animation>
-        </a-box>
-      </a-entity>
-      
-     
-      
-      <!-- Sound -->
-      <a-sound
-        src="https://cdn.glitch.global/dd7f91af-5b7d-46d9-a5aa-9b48b1db1b64/music.mp3?v=1685811446506)"
-        autoplay="true"
-      ></a-sound>
-      <a-entity
-        position="-3 1 -9"
-        sound="src: url(https://cdn.glitch.me/8d621fe7-ddbf-4522-97f4-f078e4653abe/talking.mp3?v=1685837374779); autoplay: true; volume: 0.5"
-      ></a-entity>
-    </a-scene>
-    <script src="scripts.js"></script>
-  </body>
+        width="0.2" height="0.4" depth="0.2">
+        <a-animation attribute="rotation" dur="15000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+    </a-entity>
+    <a-entity position="0 1.75 -3.5">
+      <a-box
+        src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/pexels-life-of-pix-8892.jpg?v=1685814729200"
+        width="2" height="2.5" depth="2"><a-entity id="picture-frame9" position="0 0 1.04" rotation="0 0 0">
+          <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
+            height="2" width="1.5" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+          <a-plane color="black" height="2.1" width="1.6" position="0 0 -0.01"></a-plane>
+        </a-entity>
+        <a-entity id="picture-frame10" position="1.04 0 0" rotation="0 90 0">
+          <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
+            height="2" width="1.5" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+          <a-plane color="black" height="2.1" width="1.6" position="0 0 -0.01"></a-plane>
+        </a-entity>
+        <a-entity id="picture-frame11" position="0 0 -1.04" rotation="0 180 0">
+          <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
+            height="2" width="1.5" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+          <a-plane color="black" height="2.1" width="1.6" position="0 0 -0.01"></a-plane>
+        </a-entity>
+        <a-entity id="picture-frame12" position="-1.04 0 0" rotation="0 270 0">
+          <a-plane src="https://cdn.glitch.global/8d621fe7-ddbf-4522-97f4-f078e4653abe/DSCF1450.JPG?v=1685836515646"
+            height="2" width="1.5" material="side: double; transparent: true; opacity: 0.8"></a-plane>
+          <a-plane color="black" height="2.1" width="1.6" position="0 0 -0.01"></a-plane>
+        </a-entity>
+        <a-animation attribute="rotation" dur="15000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+    </a-entity>
+
+
+
+    <!-- Sound -->
+    <a-sound src="https://cdn.glitch.global/dd7f91af-5b7d-46d9-a5aa-9b48b1db1b64/music.mp3?v=1685811446506)"
+      autoplay="true"></a-sound>
+    <a-entity position="-3 1 -9"
+      sound="src: url(https://cdn.glitch.me/8d621fe7-ddbf-4522-97f4-f078e4653abe/talking.mp3?v=1685837374779); autoplay: true; volume: 0.5"></a-entity>
+  </a-scene>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
